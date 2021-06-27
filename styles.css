@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "PeignotRegular";
+  src: url("Peignot400.ttf");
+}
+
 body {
   margin: 0;
   background-color: hsl(0, 0%, 90%);
-  font-size: 100%;
-  font-size: 1.2em;
+  font-size: 30px;
+  font-family: "PeignotRegular";
+  font-weight: bold;
+  
 }
 
 figure {
@@ -13,7 +20,7 @@ figure {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   justify-content: center;
   align-items: center;
 }
@@ -21,7 +28,6 @@ figure {
 .card {
   top: 0;
   position: sticky;
-  top: 0;
   grid-column: full;
 }
 
@@ -42,7 +48,7 @@ figure {
 }
 
 #box5 {
-  background: orangered;
+  background: rgb(251, 255, 4);
 }
 
 #box6 {
@@ -63,30 +69,43 @@ p {
 }
 
 .slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
+  -webkit-appearance: none;
+  /* Override default CSS styles */
   appearance: none;
-  width: 500px; /* Full-width */
-  height: 25px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  width: 500px;
+  /* Full-width */
+  height: 25px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
   transition: opacity .2s;
 }
 
 button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  height: 150px;
-  padding: 0;
-  margin-right: 50px;
-  vertical-align: top;
-  width: 150px;
-  background-size: 150px 150px;
+  font-size: 16px;
 }
 
+input[type='radio'], label{   
+  vertical-align: baseline;
+  padding: 10px;
+  margin: 10px;
+}
 
-input {
-  height: 30px;
-  width: 300px;
+#answers {
   text-align: center;
+  font-size: 50px;
 }
