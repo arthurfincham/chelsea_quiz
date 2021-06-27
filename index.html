@@ -11,25 +11,62 @@
 
 <body>
   <figure class="card">
-    <div class="box" id="q1">
-
+    <div class="box" id="box1">
+      <div class="question">
+        <h2>In which decade was Stamford Bridge built?</h2>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="1800" max="1900" value="1850" step="10" class="slider" id="myRange">
+        <p><strong><span id="year"></span></strong></p>
+      </div>
     </div>
   </figure>
   <figure class="card">
-    <div class="box" id="q2">
-
+    <div class="box" id="box2">
+      <div class="question">
+        <h2>Who scored the most goals?</h2>
+      </div>
+      <div class="buttons">
+        <button style="background-image: url('images/drogba.jpeg');" id="scorer" value="drogba"></button>
+        <button style="background-image: url('images/lampard.png');" id="scorer" value="lampard"></button>
+        <button style="background-image: url('images/hazard.jpeg');" id="scorer" value="hazard"></button>
+        <button style="background-image: url('images/costa.jpeg');" id="scorer" value="costa"></button>
+      </div>
     </div>
   </figure>
   <figure class="card">
-    <div class="box" id="q3">
+    <div class="box" id="box3">
+      <div class="question">
+        <h2>Where did Chelsea in the UCL in 2012?</h2>
+      </div>
+      <div id="where_input">
+        <form action="" method="get">
+          <input type="text" id="location" name="whereabouts" onChange="autoSubmit();"><br>
+          <input type="submit" style="display:none"/>
+        </form>
+      </div>
+    </div>
+  </figure>
+  <figure class="card">
+    <div class="box" id="box4">
+      <div class="question">
+        <h2>Who is the mascot?</h2>
+      </div>
+      <form>
+        <input type="radio" id="mascot" name="fav_language" value="bridge">
+        <label for="bridge" onclick="autoSubmit();">Albert the Bridge</label><br>
+        <input type="radio" id="mascot" name="fav_language" value="stamford">
+        <label for="stamford" onclick="autoSubmit();">Stamford the Lion</label><br>
+      </form>
+    </div>
+  </figure>
+  <figure class="card">
+    <div class="box" id="box5">
+    <p id="answers">Your Answers</p>
+    <button onclick="myFunction()">Click me</button>
+  </figure>
 
-    </div>
-  </figure>
-  <figure class="card"> 
-    <div class="box" id="q4">
-      
-    </div>
-  </figure>
+<script src="main.js"></script>
 </body>
 
 </html>

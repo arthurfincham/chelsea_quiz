@@ -10,9 +10,12 @@ figure {
 }
 
 .box {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -22,18 +25,68 @@ figure {
   grid-column: full;
 }
 
-#q1 {
+#box1 {
   background: blue;
 }
 
-#q2 {
-  background: yellow;
+#box2 {
+  background: skyblue;
 }
 
-#q3 {
+#box3 {
   background: blue;
 }
 
-#q4 {
-  background: yellow;
+#box4 {
+  background: skyblue;
+}
+
+#box5 {
+  background: orangered;
+}
+
+#box6 {
+  background: violet;
+}
+
+h2 {
+  color: aliceblue;
+  text-align: center;
+}
+
+p {
+  color: aliceblue;
+}
+
+.slidecontainer {
+  text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 500px; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+button {
+  display: inline-block;
+  height: 150px;
+  padding: 0;
+  margin-right: 50px;
+  vertical-align: top;
+  width: 150px;
+  background-size: 150px 150px;
+}
+
+
+input {
+  height: 30px;
+  width: 300px;
+  text-align: center;
 }
