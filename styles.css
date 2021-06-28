@@ -118,3 +118,30 @@ input[type='radio'], label{
   text-align: center;
   font-size: 50px;
 }
+
+
+/* Scorer Image Buttons */
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+  height: 25vh;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid rgb(238, 255, 0);
+}
+
+.topscorer {
+  display: flex;
+  flex-direction: row;
+}
