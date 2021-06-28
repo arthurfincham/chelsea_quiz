@@ -17,11 +17,12 @@
       </div>
       <div class="slidecontainer">
         <input type="range" min="1800" max="1900" value="1850" step="10" class="slider" id="myRange">
-        <p><strong><span id="year"></span></strong>s</p>
+        <p><strong><span id="year"></span></strong> s</p>
       </div>
+      <a href="#second"><img src="resources/whitearrow.png" width="80"></a>
     </div>
   </figure>
-  <figure class="card">
+  <figure id="second" class="card">
     <div class="box" id="box2">
       <div class="question">
         <h2>WHO IS CHELSEA'S ALL TIME TOP SCORER?</h2>
@@ -29,46 +30,86 @@
       <div class="topscorer">
         <label>
           <input type="radio" id="drogba" name="scorer" value="drogba">
-          <img src="images/drogba.jpeg">
+          <img src="resources/drogba.jpeg">
         </label><br>
         <label>
           <input type="radio" id="lampard" name="scorer" value="lampard">
-          <img src="images/lampard.png">
+          <img src="resources/lampard.png">
         </label><br>
         <label>
           <input type="radio" id="hazard" name="scorer" value="hazard">
-          <img src="images/hazard.jpeg">
+          <img src="resources/hazard.jpeg">
         </label>
       </div>
+      <a href="#third"><img src="resources/whitearrow.png" width="80"></a>
+    </div>
   </figure>
-  <figure class="card">
+  <figure id="third" class="card">
     <div class="box" id="box3">
       <div class="question">
-        <h2>WHERE DID CHELSEA WIN THE UCL 2012?</h2>
+        <h2>WHERE DID CHELSEA WIN THE UCL IN 2012?</h2>
       </div>
       <div id="where_input">
-        <form action="" method="get">
+        <form spellcheck="false" action="" method="get">
           <input type="text" id="location" name="whereabouts" onChange="autoSubmit();"><br>
           <input type="submit" style="display:none" />
         </form>
       </div>
+      <a href="#fourth"><img src="resources/whitearrow.png" width="80"></a>
     </div>
   </figure>
-  <figure class="card">
+  <figure id="fourth" class="card">
     <div class="box" id="box4">
       <div class="question">
         <h2>WHO IS THE CLUB MASCOT?</h2>
       </div>
       <div class="mascot">
-        <input type="radio" id="bridge" name="mascot" value="Albert the Bridge">
-        <label for="bridge">ALBERT THE BRIDGE</label><br>
+        <input type="radio" id="pensioner" name="mascot" value="Chelsea Pensioner">
+        <label for="pensioner">THE CHELSEA PENSIONER</label><br>
         <input type="radio" id="stamford" name="mascot" value="Stamford the Lion">
         <label for="stamford">STAMFORD THE LION</label><br>
+        <input type="radio" id="bridge" name="mascot" value="Albert the Bridge">
+        <label for="bridge">ALBERT THE BRIDGE</label><br>
       </div>
+      <a href="#fifth"><img src="resources/whitearrow.png" width="80"></a>
     </div>
   </figure>
-  <figure class="card">
+  <figure id="fifth" class="card">
     <div class="box" id="box5">
+      <div class="question">
+        <h3>DIEGO COSTA HAS PLAYED FOR TWO COUNTRIES.<br>WHICH ARE THEY?</h3>
+      </div>
+      <div class="nationality">
+        <label>
+          <input type="checkbox" class="nationman" id="spain" name="nation" value="spain">
+          <img src="resources/spain.png">
+        </label><br>
+        <label>
+          <input type="checkbox" class="nationman" id="argentina" name="nation" value="argentina">
+          <img src="resources/argentina.png">
+        </label><br>
+        <label>
+          <input type="checkbox" class="nationman" id="brazil" name="nation" value="brazil">
+          <img src="resources/brazil.png">
+        </label>
+        <label>
+          <input type="checkbox" class="nationman" id="italy" name="nation" value="italy">
+          <img src="resources/italy.png">
+        </label>
+        <label>
+          <input type="checkbox" class="nationman" id="portugal" name="nation" value="portugal">
+          <img src="resources/portugal.png">
+        </label>
+        <label>
+          <input type="checkbox" class="nationman" id="colombia" name="nation" value="colombia">
+          <img src="resources/colombia.png">
+        </label>
+      </div>
+      <a href="#sixth"><img src="resources/whitearrow.png" width="80"></a>
+    </div>
+  </figure>
+  <figure id="sixth" class="card">
+    <div class="box" id="box6">
       <h3 id="answers">Your Answers</h3>
       <button onclick="myFunction()">Results</button>
   </figure>

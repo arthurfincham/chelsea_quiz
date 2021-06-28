@@ -1,13 +1,7 @@
 @font-face {
   font-family: "PeignotRegular";
-  src: url("Peignot400.ttf");
+  src: url("resources/Peignot400.ttf");
 }
-.container{
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(300px);
-  scroll-snap-type: y mandatory;
-}
-
 
 body {
   margin: 0;
@@ -19,6 +13,21 @@ body {
 
 figure {
   margin: 0 0 1.5em 0;
+}
+
+p {
+  text-shadow: 2px 1px #f5e93d;
+  font-size: 40px;
+}
+
+a {
+  color: aliceblue;
+  position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  font-variant: small-caps;
+  text-decoration: none;
+  top: 85vh;
+
 }
 
 .box {
@@ -41,7 +50,7 @@ figure {
 }
 
 #box1 {
-  background: blue;
+  background: #064694;
 }
 
 #box2 {
@@ -49,7 +58,7 @@ figure {
 }
 
 #box3 {
-  background: blue;
+  background: #064694;
 }
 
 #box4 {
@@ -57,7 +66,7 @@ figure {
 }
 
 #box5 {
-  background: rgb(251, 255, 4);
+  background: #064694;
 }
 
 #box6 {
@@ -67,6 +76,14 @@ figure {
 h2 {
   color: aliceblue;
   text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+h3 { 
+  color: aliceblue;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  line-height: 50px;
 }
 
 p {
@@ -87,6 +104,7 @@ p {
   /* Specified height */
   background: #d3d3d3;
   /* Grey background */
+  border-radius: 10px;
   outline: none;
   /* Remove outline */
   opacity: 0.7;
@@ -96,9 +114,12 @@ p {
   transition: opacity .2s;
 }
 
+.slider:hover {
+  opacity: 1;
+}
+
 button {
   background-color: #4CAF50;
-  /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -123,7 +144,7 @@ input[type='radio'], label{
 /* Scorer Image Buttons */
 
 /* HIDE RADIO */
-[type=radio] { 
+#box2 [type=radio] { 
   position: absolute;
   opacity: 0;
   width: 0;
@@ -131,17 +152,73 @@ input[type='radio'], label{
 }
 
 /* IMAGE STYLES */
-[type=radio] + img {
+#box2 [type=radio] + img {
   cursor: pointer;
   height: 25vh;
+  border-radius: 10px;
 }
 
 /* CHECKED STYLES */
-[type=radio]:checked + img {
-  outline: 2px solid rgb(238, 255, 0);
+#box2 [type=radio]:checked + img {
+  border: 5px solid #f5e93d;
+;
 }
 
 .topscorer {
   display: flex;
   flex-direction: row;
+}
+
+/* Munich Input Styling */
+input[type=text] {
+  font-family: "PeignotRegular";
+  font-size: 50px;
+  text-align: center;
+  background-color: #064694;
+  color: yellow;
+  border: 5px solid yellow;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+/* Mascot Question Styling */
+#box4 label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 35px;
+  text-align: center;
+}
+
+#box4 input[type="radio"] {
+  display:none;   
+}
+#box4 input[type="radio"]:checked + label {
+  color: #f5e93d;
+}
+
+.nationality {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#box5 [type=checkbox] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+#box5 [type=checkbox] + img {
+  cursor: pointer;
+  height: 20vh;
+  border-radius: 10px;
+}
+
+/* CHECKED STYLES */
+#box5 [type=checkbox]:checked + img {
+  border: 5px solid #f5e93d;
+;
 }
