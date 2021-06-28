@@ -25,6 +25,14 @@ p {
   font-size: 40px;
 }
 
+/* White Anchor Arrows */
+
+@media only screen and (max-width: 960px) {
+  a {
+    display: none;
+  }
+}
+
 a {
   color: aliceblue;
   position: absolute;
@@ -34,6 +42,15 @@ a {
   top: 85vh;
 
 }
+
+@media only screen and (max-width: 960px) {
+  #box1 .question {
+    position:absolute;
+    top: 3vh;
+  }
+}
+
+
 
 .box {
   display: flex;
@@ -90,6 +107,14 @@ a {
   background: violet;
 }
 
+@media only screen and (max-width: 960px) {
+  .question {
+    font-size: 3vh;
+    width: 85vw;
+    margin-bottom: 3vh;
+  }
+}
+
 
 h2 {
   color: aliceblue;
@@ -109,8 +134,50 @@ p {
   color: aliceblue;
 }
 
+/* Slider */
+
+@media only screen and (max-width: 960px) {
+  .slidecontainer {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 1vh;
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  p {
+    position: absolute;
+    left: 22vw;
+    top: 45vh;
+  }
+}
+
 .slidecontainer {
   text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .slider {
+    transform: rotate();
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 500px;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    border-radius: 10px;
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
 }
 
 .slider {
@@ -148,6 +215,7 @@ button {
   font-size: 16px;
 }
 
+
 input[type='radio'],
 label {
   vertical-align: baseline;
@@ -162,6 +230,14 @@ label {
 
 
 /* Scorer Image Buttons */
+
+@media only screen and (max-width: 960px) {
+  #box2 .question {
+    position: absolute;
+    top: 5vh;
+  }
+}
+
 
 /* HIDE RADIO */
 #box2 [type=radio] {
@@ -184,6 +260,35 @@ label {
   ;
 }
 
+@media only screen and (max-width: 960px) {
+  #hazard+ img  {
+    position: absolute;
+    top: 25vh;
+    left: 31vw;
+    max-width: 100%;
+    max-height: 120px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #lampard+ img  {
+    position: absolute;
+    top: 50vh;
+    left: 31vw;
+    max-height: 120px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #drogba+ img  {
+    position: absolute;
+    top: 75vh;
+    left: 31vw;
+    max-height: 120px;
+  }
+}
+
+
 .topscorer {
   display: flex;
   flex-direction: row;
@@ -201,6 +306,20 @@ input[type=text] {
   outline: none;
 }
 
+@media only screen and (max-width: 960px) {
+
+} input[type=text] {
+  font-family: "Seagram";
+  font-size: 30px;
+  text-align: center;
+  background-color: #064694;
+  color: yellow;
+  border: 5px solid yellow;
+  border-radius: 5px;
+  outline: none;
+  width: 80vw;
+}
+
 
 /* Mascot Question Styling */
 #box4 label {
@@ -209,6 +328,19 @@ input[type=text] {
   justify-content: center;
   font-size: 35px;
   text-align: center;
+}
+
+@media only screen and (max-width: 960px){
+  #box4 label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 35px;
+    text-align: center;
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #box4 input[type="radio"] {
@@ -243,3 +375,28 @@ input[type=text] {
   border: 5px solid #f5e93d;
   ;
 }
+
+@media only screen and (max-width: 960px) {
+  #box5 h3 {
+    position: absolute;
+    font-size: 4vh;
+    top: 5vh;
+    line-height: 5vh;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #box5 .nationality {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15vh;
+    max-height: 70vh;
+    align-self: center;
+  }
+
+  @media only screen and (max-width: 960px) {
+    #box5 img {
+      max-height: 100px;
+    }
+  }
