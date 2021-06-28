@@ -11,9 +11,15 @@
 
 <body>
   <figure class="card">
+    <div class="box" id="box0">
+    <h1>A quick test of your Chelsea knowledge.</h1>
+      <a href="#first"><img src="resources/whitearrow.png" width="80"></a>
+    </div>
+  </figure>
+  <figure id="first" class="card">
     <div class="box" id="box1">
       <div class="question">
-        <h2>IN WHICH DECADE WAS STAMFORD BRIDGE BUILT?</h2>
+        <h2>In which decade was Stamford Bridge built?</h2>
       </div>
       <div class="slidecontainer">
         <input type="range" min="1800" max="1900" value="1850" step="10" class="slider" id="myRange">
@@ -25,7 +31,7 @@
   <figure id="second" class="card">
     <div class="box" id="box2">
       <div class="question">
-        <h2>WHO IS CHELSEA'S ALL TIME TOP SCORER?</h2>
+        <h2>Who is Chelsea's all time top scorer?</h2>
       </div>
       <div class="topscorer">
         <label>
@@ -47,7 +53,7 @@
   <figure id="third" class="card">
     <div class="box" id="box3">
       <div class="question">
-        <h2>WHERE DID CHELSEA WIN THE UCL IN 2012?</h2>
+        <h2>Where did Chelsea win the UCL in 2012?</h2>
       </div>
       <div id="where_input">
         <form spellcheck="false" action="" method="get">
@@ -61,15 +67,15 @@
   <figure id="fourth" class="card">
     <div class="box" id="box4">
       <div class="question">
-        <h2>WHO IS THE CLUB MASCOT?</h2>
+        <h2>Who is the club mascot?</h2>
       </div>
       <div class="mascot">
         <input type="radio" id="pensioner" name="mascot" value="0">
-        <label for="pensioner">THE CHELSEA PENSIONER</label><br>
+        <label for="pensioner">The Chelsea Pensioner</label><br>
         <input type="radio" id="stamford" name="mascot" value="1">
-        <label for="stamford">STAMFORD THE LION</label><br>
+        <label for="stamford">Stamford the Lion</label><br>
         <input type="radio" id="bridge" name="mascot" value="0">
-        <label for="bridge">ALBERT THE BRIDGE</label><br>
+        <label for="bridge">Albert the Bridge</label><br>
       </div>
       <a href="#fifth"><img src="resources/whitearrow.png" width="80"></a>
     </div>
@@ -77,7 +83,7 @@
   <figure id="fifth" class="card">
     <div class="box" id="box5">
       <div class="question">
-        <h3>DIEGO COSTA HAS PLAYED FOR TWO COUNTRIES.<br>WHICH ARE THEY?</h3>
+        <h3>Diego Costa has been capped by two nations.<br>Which are they?</h3>
       </div>
       <div class="nationality">
         <label>
@@ -108,10 +114,9 @@
       <a href="#sixth"><img src="resources/whitearrow.png" width="80"></a>
     </div>
   </figure>
-  <figure id="sixth" class="card">
+  <figure onclick="myFunction()" id="sixth" class="card">
     <div class="box" id="box6">
-      <h3 id="answers">Your Answers</h3>
-      <button onclick="myFunction()">Results</button>
+      <h3 id="answers">Click anywhere for your results</h3>
   </figure>
   </div>
   <script src="main.js"></script>

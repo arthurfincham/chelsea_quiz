@@ -1,18 +1,23 @@
 @font-face {
-  font-family: "PeignotRegular";
-  src: url("resources/Peignot400.ttf");
+  font-family: "Seagram";
+  src: url("resources/Seagram\ tfb.ttf");
 }
 
 body {
   margin: 0;
   background-color: hsl(0, 0%, 90%);
   font-size: 30px;
-  font-family: "PeignotRegular";
+  font-family: "Seagram";
   font-weight: bold;
 }
 
 figure {
   margin: 0 0 1.5em 0;
+}
+
+h1 {
+  width: 80vw;
+  text-align: center;
 }
 
 p {
@@ -49,12 +54,20 @@ a {
   scroll-snap-align: start;
 }
 
+#box0{ 
+  background: #f5e93d;
+}
+
 #box1 {
   background: #064694;
 }
 
 #box2 {
   background: skyblue;
+}
+
+#box2 h2 {
+  color: #f5e93d;
 }
 
 #box3 {
@@ -65,6 +78,10 @@ a {
   background: skyblue;
 }
 
+#box4 h2 {
+  color: #f5e93d;
+}
+
 #box5 {
   background: #064694;
 }
@@ -73,17 +90,19 @@ a {
   background: violet;
 }
 
+
 h2 {
   color: aliceblue;
   text-align: center;
   text-shadow: 2px 2px black;
 }
 
-h3 { 
+h3 {
   color: aliceblue;
   text-align: center;
+  font-size: 40px;
   text-shadow: 2px 2px black;
-  line-height: 50px;
+  line-height: 60px;
 }
 
 p {
@@ -129,7 +148,8 @@ button {
   font-size: 16px;
 }
 
-input[type='radio'], label{   
+input[type='radio'],
+label {
   vertical-align: baseline;
   padding: 10px;
   margin: 10px;
@@ -144,7 +164,7 @@ input[type='radio'], label{
 /* Scorer Image Buttons */
 
 /* HIDE RADIO */
-#box2 [type=radio] { 
+#box2 [type=radio] {
   position: absolute;
   opacity: 0;
   width: 0;
@@ -152,16 +172,16 @@ input[type='radio'], label{
 }
 
 /* IMAGE STYLES */
-#box2 [type=radio] + img {
+#box2 [type=radio]+img {
   cursor: pointer;
   height: 25vh;
   border-radius: 10px;
 }
 
 /* CHECKED STYLES */
-#box2 [type=radio]:checked + img {
+#box2 [type=radio]:checked+img {
   border: 5px solid #f5e93d;
-;
+  ;
 }
 
 .topscorer {
@@ -171,7 +191,7 @@ input[type='radio'], label{
 
 /* Munich Input Styling */
 input[type=text] {
-  font-family: "PeignotRegular";
+  font-family: "Seagram";
   font-size: 50px;
   text-align: center;
   background-color: #064694;
@@ -192,9 +212,10 @@ input[type=text] {
 }
 
 #box4 input[type="radio"] {
-  display:none;   
+  display: none;
 }
-#box4 input[type="radio"]:checked + label {
+
+#box4 input[type="radio"]:checked+label {
   color: #f5e93d;
 }
 
@@ -203,7 +224,7 @@ input[type=text] {
   flex-wrap: wrap;
 }
 
-#box5 [type=checkbox] { 
+#box5 [type=checkbox] {
   position: absolute;
   opacity: 0;
   width: 0;
@@ -211,14 +232,14 @@ input[type=text] {
 }
 
 /* IMAGE STYLES */
-#box5 [type=checkbox] + img {
+#box5 [type=checkbox]+img {
   cursor: pointer;
   height: 20vh;
   border-radius: 10px;
 }
 
 /* CHECKED STYLES */
-#box5 [type=checkbox]:checked + img {
+#box5 [type=checkbox]:checked+img {
   border: 5px solid #f5e93d;
-;
+  ;
 }

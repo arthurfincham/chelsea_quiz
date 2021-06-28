@@ -1,8 +1,8 @@
 // Range Slider
 var slider = document.getElementById("myRange");
 var output = document.getElementById("year");
-output.innerHTML = slider.value; 
-slider.oninput = function() {
+output.innerHTML = slider.value;
+slider.oninput = function () {
   output.innerHTML = this.value;
 }
 
@@ -10,18 +10,18 @@ slider.oninput = function() {
 
 function myFunction() {
 
-  var decade = document.getElementById("year").innerHTML; 
-  var scorer = document.querySelector('input[name="scorer"]:checked').value 
-  var champs = document.getElementById('location').value; 
+  var decade = document.getElementById("year").innerHTML;
+  var scorer = document.querySelector('input[name="scorer"]:checked').value
+  var champs = document.getElementById('location').value;
   var mascot = document.querySelector('input[name="mascot"]:checked').value
   var array = []
   var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
-  
+
   for (var i = 0; i < checkboxes.length; i++) {
     array.push(checkboxes[i].value)
   }
 
-  var nation = array.reduce((a,b) => a + b)
+  var nation = array.reduce((a, b) => a + b)
 
   let score = 0
 
@@ -31,17 +31,17 @@ function myFunction() {
   mascot == 1 ? score += 1 : score += 0
   nation == 11 ? score += 1 : score += 0
 
-  document.getElementById("answers").innerHTML = "You got " + score + " out of five!"
-} 
+  document.getElementById("answers").innerHTML = "You got " + score + " out of 5!"
+}
 
 // Anchor Link Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+    e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
 
@@ -50,7 +50,8 @@ var checks = document.querySelectorAll(".nationman");
 var max = 2;
 for (var i = 0; i < checks.length; i++)
   checks[i].onclick = selectiveCheck;
-function selectiveCheck (event) {
+
+function selectiveCheck(event) {
   var checkedChecks = document.querySelectorAll(".nationman:checked");
   if (checkedChecks.length >= max + 1)
     return false;
