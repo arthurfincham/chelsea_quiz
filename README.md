@@ -53,11 +53,12 @@ This [thread](https://stackoverflow.com/questions/17541614/use-images-instead-of
 Another [thread](https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link) on *stackoverflow* gave me smooth scrolling when using my anchor link buttons.
 
 <h3>:iphone: Mobile</h3>
+
 *Update 29th June.*
 
 The app now *works* on mobile, but the images are not well aligned.
 
-<h2>Next Steps</h2>
+<h2>:feet: Next Steps</h2>
 <ul>
   <li>Refactor the <strong>CSS</strong> and remove unnecessary code.</li>
   <li>Refactor the <strong>HTML</strong> and get rid of unused <i>divs</i>.</li>
