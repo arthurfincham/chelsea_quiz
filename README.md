@@ -6,13 +6,23 @@
 
 <h3>Description</h3>
 
-In making this test I tried to use different ways of answering the questions to practice getting their value in the Javascript file.
+In making this quiz I tried to use different ways of answering the questions to practice getting their value in the Javascript file.
 
 For example...
 <ul>
-  <li>Range Slider</li>
-  <li>Radio Button</li>
-  <li>Text Input</li>
+  <li>Range slider</li>
+  <li>Radio buttons wrapped in images</li>
+  <li>Customised Text Input</li>
+  <li>Radio buttons wrapped in text</li>
 </ul>
+
+Doing so meant I had to learn the difference between...
+```
+document.getElementById("year").innerHTML;
+document.querySelector('input[name="scorer"]:checked').value
+var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+```
+...so that I could get the logic working!
+
 
 Also used a sticky scrolling effect in CSS.
