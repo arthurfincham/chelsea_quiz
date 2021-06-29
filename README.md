@@ -18,9 +18,13 @@ For example...
 
 Doing so meant I had to learn the difference between...
 ```
-document.getElementById("year").innerHTML;
-document.querySelector('input[name="scorer"]:checked').value
-var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+document.getElementById().innerHTML
+```
+```
+document.querySelector().value
+```
+```
+document.querySelectorAll()
 ```
 ...so that I could get the logic working!
 
