@@ -35,8 +35,10 @@ When researching how to make a simple quiz, I found lots of good resources but f
 I'm fairly pleased with the results, although my code is probably clunky and longer than it needs to be.
 
 <h3>Resources</h3>
-<ul>
-  <li>This [article][https://css-tricks.com/snippets/css/a-guide-to-flexbox/] was vital in understanding *Flex*.</li>
-  <li>This [tutorial][https://www.w3schools.com/howto/howto_js_rangeslider.asp] showed me how to include and style the range slider.</li>
-  <li>This [thread][https://stackoverflow.com/questions/17541614/use-images-instead-of-radio-buttons] on stackoverflow taught me how to wrap radio buttons.</li>
-</ul>
+
+This [article][https://css-tricks.com/snippets/css/a-guide-to-flexbox/] was vital in understanding *Flex*.
+
+This [tutorial][https://www.w3schools.com/howto/howto_js_rangeslider.asp] showed me how to include and style the range slider.
+
+This [thread][https://stackoverflow.com/questions/17541614/use-images-instead-of-radio-buttons] on stackoverflow taught me how to wrap radio buttons.
+
